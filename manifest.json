@@ -5,5 +5,15 @@
     "version": "##VERSION##",
     "revision": "0",
     "image": "flecs.azurecr.io/com.herborner-pumpen.hp.modbus-bridge",
-    "multiInstance": false
+    "multiInstance": false,
+    "ports":[
+        "502:5020"
+    ],
+    "env":[
+        "LOGLEVEL=info",
+        "LOGFILE=connector"
+    ],
+    "volumes":[
+        "logs:/var/log/hp"
+    ]
 }
