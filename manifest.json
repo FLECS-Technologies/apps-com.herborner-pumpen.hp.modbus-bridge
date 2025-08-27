@@ -6,14 +6,15 @@
     "revision": "0",
     "image": "flecs.azurecr.io/com.herborner-pumpen.hp.modbus-bridge",
     "multiInstance": false,
+    "editors": [{  "name": "Modbus Status Viewer",  "port": 9330,  "supportsReverseProxy": true}],
     "ports":[
-        "502:5020"
+        "502:5020",
+        "9330:9330"
     ],
     "env":[
-        "LOGLEVEL=info",
-        "LOGFILE=connector"
+        "LOGLEVEL=warning"
     ],
     "volumes":[
-        "logs:/var/log/hp"
+        "data:/app/data"
     ]
 }
