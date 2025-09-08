@@ -12,7 +12,7 @@
         "9330:9330"
     ],
     "env":[
-        "LOGLEVEL=warning"
+        "LOGLEVEL=notice"
     ],
     "volumes":[
         "data:/app/data"
